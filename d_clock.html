@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Clock in javascript</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .center {
+        margin-top: 15rem;
+        height: 150px;
+        width: 500px;
+        background: rebeccapurple;
+        border-radius: 40px;
+        padding: 30px 0px;
+      }
+      #Clock {
+        background: yellow;
+        padding: 20px 50px;
+        width: 40px;
+        border-radius: 40px;
+        margin-top: 20px;
+      }
+
+      /* ///////////////// */
+      /* /////////////////// */
+      .guessfield {
+        padding: 5px;
+        border-radius: 3px;
+        border: none;
+        text-align: center;
+      }
+      .guess-submit {
+        background-color: rgb(119, 116, 119);
+        padding: 4px;
+        /* margin-top: 20px; */
+        margin-left: -4px;
+        border-radius: 5px;
+        border: 2px groove rgb(133, 131, 131);
+      }
+      .resultpare {
+        font-size: 20px;
+        text-transform: capitalize;
+      }
+    </style>
+  </head>
+  <body style="background-color: gray">
+    <center>
+      <div class="center">
+        <div id="banner"><span>Local Time of Pakistan</span></div>
+        <div id="Clock"></div>
+      </div>
+    </center>
+
+    <!-- game guessing Number in javascript -->
+    <!-- ////////////////////////// -->
+    <!-- /////////////////////////////// -->
+    <center>
+      <div class="main">
+        <h2>Game Guessing Number in Javascript</h2>
+        <p>Guess a Number between 1 and 100</p>
+        <p>You have 5 Attempt to Guess a Right Number</p>
+        <br />
+        <form action="#" class="form">
+          <label for="" id="guess">Guess a Number </label>
+          <input type="text" id="guessfield" class="guessfield" />
+
+          <input
+            type="submit"
+            id="submit"
+            value="submitted-value"
+            class="guess-submit"
+            placeholder="Input_Guess_Num"
+          />
+          <div class="resultpare">
+            <p>Previous guess <span class="guesses"></span></p>
+            <p>Remaining Guesses <span class="last_result">5</span></p>
+            <p class="lowOrhigh"></p>
+          </div>
+        </form>
+      </div>
+    </center>
+
+    <script src="d_clock.js"></script>
+  </body>
+</html>
